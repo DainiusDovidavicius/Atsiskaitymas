@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(46, 45, 45);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 13px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.Header:hover {
+  background: green;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

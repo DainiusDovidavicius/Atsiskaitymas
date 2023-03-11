@@ -1,0 +1,12 @@
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  padding-top: 20px;
+}
+
+.News1 {
+  text-align: center;
+  color: green;
+  padding-top: 30px;
+}

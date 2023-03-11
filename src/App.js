@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import Aboutuspage from "./pages/Aboutuspage";
 import Contactspage from "./pages/Contactspage";
+import Game from "./pages/Game";
 import Newspage from "./pages/Newspage";
 import Welcomepage from "./pages/Welcomepage";
 
@@ -18,6 +19,9 @@ function App() {
       </Route>
       <Route path="/aboutus">
         <Aboutuspage />
+      </Route>
+      <Route path="/game">
+        <Game />
       </Route>
     </Switch>
   );
