@@ -23,6 +23,9 @@ function Header() {
           <Link to="/game">
             <li className="Header">Game</li>
           </Link>
+          <Link to="/greetings">
+            <li className="Header">Greetings</li>
+          </Link>
         </ul>
       </nav>
     </header>
