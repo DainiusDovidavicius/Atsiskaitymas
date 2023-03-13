@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Header from "../components/Header";
 import "./Game.css";
 
 const randomPosition = () => ({
@@ -29,6 +30,9 @@ const MovingLetters = () => {
 
   return (
     <div className="moving-letters">
+      <div>
+        <Header />
+      </div>
       {letters.split("").map((letter, index) => (
         <MovingLetter key={index} letter={letter} />
       ))}
