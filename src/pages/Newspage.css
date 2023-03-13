@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .News1 {
@@ -10,3 +10,23 @@
   color: green;
   padding-top: 30px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .news {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .news {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .news {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 1024px  768px    425px */

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import Button from "../components/Button";
 import Header from "../components/Header";
 import "./Contactspage.css";
 
 function Contactspage() {
   const [users, setUsers] = useState([]);
+  const history = useHistory();
   console.log(users);
 
   useEffect(() => {
@@ -12,12 +15,16 @@ function Contactspage() {
       .then((responsejson) => setUsers(responsejson));
   }, []);
 
+  function handleClick(id) {
+    history.push(`/contacts/${id}`);
+  }
+
   return (
     <div>
       <Header />
       <div>
         {users.map((user) => (
-          <div key={users.id}>
+          <div key={user.id}>
             <h2>{user.name}</h2>
             <ul className="contacts">
               <li>
@@ -33,6 +40,9 @@ function Contactspage() {
               </li>
               <li>Suite: {user.address.suite}</li>
             </ul>
+            <Button onclick={() => handleClick(user.id)}>
+              More Info About User
+            </Button>
           </div>
         ))}
       </div>
