@@ -11,3 +11,33 @@
 .tekstas {
   padding-top: 30px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .map {
+    width: 99%;
+  }
+  .tekstas {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .map {
+    width: 98%;
+  }
+  .tekstas {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .map {
+    width: 97%;
+  }
+  .tekstas {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

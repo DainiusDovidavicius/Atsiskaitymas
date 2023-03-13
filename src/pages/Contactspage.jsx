@@ -25,7 +25,7 @@ function Contactspage() {
       <div>
         {users.map((user) => (
           <div key={user.id}>
-            <h2>{user.name}</h2>
+            <h2 className="useris">{user.name}</h2>
             <ul className="contacts">
               <li>
                 Website: <a href="website">{user.website}</a>

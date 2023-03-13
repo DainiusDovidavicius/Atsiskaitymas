@@ -6,3 +6,33 @@
   padding-left: 220px;
   border: 1px solid #aaaaaa;
 }
+
+@media only screen and (max-width: 1024px) {
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .useris {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .useris {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .useris {
+    margin: 20px;
+  }
+}
